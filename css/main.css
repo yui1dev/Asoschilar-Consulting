@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-image: url(../img/hero/Background\ pattern.svg);
     background-color: white;
@@ -597,6 +599,82 @@ body {
 
 /* contact end */
 
+/* footer start */
+.footer {
+    background-color: rgba(242, 242, 247, 1);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: start;
+
+}
+
+.footer-info {
+    margin-right: auto;
+}
+
+.footer-logo {
+    width: 173px;
+    margin-bottom: 66px;
+}
+
+.footer-text {
+    font-family: SF Pro, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: rgba(100, 116, 139, 1);
+}
+
+.footer-right {
+    display: grid;
+    gap: 16px;
+    min-width: 200px;
+}
+
+
+.footer-container .footer-right:nth-child(2) {
+    margin-right: 48px;
+}
+
+.footer-right-title {
+    font-family: SF Pro, sans-serif;
+    font-weight: 590;
+    font-style: Semibold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6%;
+    color: rgba(15, 23, 42, 1);
+}
+
+.footer-right-list {
+    display: grid;
+    gap: 12px;
+
+}
+
+.footer-right-link {
+    font-family: SF Pro, sans-serif;
+    font-weight: 510;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: rgba(71, 85, 105, 1);
+    text-decoration: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* footer end */
+
+
 /* header media */
 @media (max-width: 768px) {
     .header {
@@ -981,5 +1059,43 @@ body {
         line-height: 28px;
         letter-spacing: 0%;
 
+    }
+}
+
+/* footer media */
+@media (max-width:768px) {
+    .footer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .footer-logo {
+        width: 124px;
+        margin-bottom: 16px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .footer-container .footer-right:nth-child(2) {
+        margin-right: 0;
+    }
+    .footer-right{
+        gap: 12px;
+    }
+    .footer-right-title{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .footer-right-link{
+        font-size: 16px;
+        line-height: 24px;
     }
 }
