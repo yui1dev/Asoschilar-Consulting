@@ -6,10 +6,6 @@
 html{
     scroll-behavior: smooth;
 }
-body {
-    background-image: url(../img/hero/Background\ pattern.svg);
-    background-color: white;
-}
 
 .container {
     max-width: 1240px;
@@ -97,6 +93,7 @@ body {
 
 
 .hero {
+    background-image: url(../img/hero/Background\ pattern.svg);
     padding-top: 179px;
     padding-bottom: 170px;
 }
@@ -171,7 +168,7 @@ body {
 
 /* service start */
 .service {
-
+    
     padding-top: 120px;
     padding-bottom: 72px;
 }
@@ -262,8 +259,10 @@ body {
 /* why us start */
 
 .why-us {
+    border-image: url(../img/whyus/bg4.svg);
     padding-top: 64px;
     padding-bottom: 64px;
+    background-repeat: no-repeat;
 }
 
 .why-us-container {
@@ -729,7 +728,7 @@ body {
     }
 
     .hero-text {
-        font-family: SF Pro;
+        font-family: SF Pro, sans-serif;
         font-weight: 400;
         font-style: Regular;
         font-size: 14px;
@@ -742,6 +741,7 @@ body {
         font-size: 14px;
         line-height: 20px;
         padding: 14px 24px;
+        display: inline-block;
     }
 }
 
